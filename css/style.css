@@ -13,30 +13,39 @@
 /* start navigation */ 
 
 .header_area .main-menu .navbar .navbar-brand{
-    padding: 0 2rem 0 5rem;
+    padding:  0.1rem 3rem;
+    color: #31708e;
+    font-weight: bold ;
+    font-family: arial;
+    letter-spacing: 5px;
+    font-size: 30px;
+
 }
 
 .header_area .main-menu .navbar{
-    background-color: #f5a05c;
+    background-color: #f7f9fb;
     padding: 1rem 20rem ;
 }
 
 .header_area .main-menu .nav-item .nav-link{
-    font: normal 500 15px/2px var(--roboto);
-    text-transform: uppercase;
-    padding: 1.7rem;
-    color: var(--title-color);
+    /* font: normal 500 15px/2px ; */
+    font-size: 20px;
+    padding: 1rem 3rem;
+    color:  #687864;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
 }
 
 .header_area .main-menu .navbar-nav .active a{
-    background: var(--gradient-color);
+    background:#5085a3;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .header_area .main-menu .navbar-nav a:hover{
-    background: var(--gradient-color);
+    background: #5085a3;
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
     background-clip: text;
@@ -47,17 +56,17 @@
 
 /* Banner Area */ 
 
-/* .site-main .site-banner {
-    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
-} */
+ .site-main .site-banner {
+    /* background: url(../img/banner/home-banner.png) no-repeat 0% 100%; */
+} 
 
 .site-main .site-banner {
-    background-image: url("../img/bg-shape.svg");
-    background-color:  #142556;
-    background-repeat: round;
+    /* background-image: url("../img/bg-shape.svg"); */
+    background-color:  #31708e;
+    background-repeat: no-repeat;
     background-position: right;
-    background-size: contain;
-    height: calc(100vh - 72px);
+    /* background-size: contain; */
+    /* height: calc(100vh - 72px); */
     display: flex;
     align-items: center;
   }
@@ -65,7 +74,7 @@
 .site-main .site-banner .site-title h3{
     padding-top: 35%;
     font-weight: 500;
-    color: #D0d1c7;
+    color: white;
 }
 
 /* .site-main .site-banner .site-title h3::after{
@@ -80,7 +89,7 @@
 
 .site-main .site-banner .site-title h1{
     font-size: 5rem;
-    color: #D0d1c7;
+    color: white;
 }
 
 .site-main .site-banner .site-title h4{
@@ -108,12 +117,12 @@
 
   .site-banner .banner-image .photo-bg  {
     position: absolute;
-    width: 420px;
-    height: 420px;
-    left: 15px;
-    top: 115px;
+    width: 450px;
+    height: 450px;
+    left: 2px;
+    top: 100px;
   
-    background: #f5a05c;
+    background: #687864;
     transform: rotate(-6deg);
   }
 
@@ -134,21 +143,23 @@
 
 .site-main .about-area{
     padding: 8rem 5rem;
-    background-color: #142556;
+    background-color: #31708e;
 }
 
 .site-main .about-area .about-title h2 > span{
     display: block;
     font: normal bold 49px/ 60px var(--roboto);
     letter-spacing: 21px;
-    color: #f5a05c;
+    color: whitesmoke;
 }
 
 .site-main .about-area .about-title .paragraph > p{
-    padding: .4rem 0;
-    font-size: 20px;
+    font-family: Arial;
+    padding: 1rem 0.1rem;
+    font-size: 18px;
     letter-spacing: 1px;
-    color: f5a05c;
+    word-spacing: 2px;
+    color: white;
 }
 
 /* End About Area */ 
@@ -157,21 +168,38 @@
 
 /* Project Area */ 
 
+.project-area{
+    background-color: #f7f9fb;
+}
+
 main .site-content{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 40%;
 }
 
 main .post-content{
     width: 100%;
     
 }
+.project-area h1{
+    color: #black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 50px;
+}
 
 main .site-content .post-content > .post-image, .post-title{
     padding: 1rem 2rem;
     position: relative;
+    color: ;
 }
 
+main .site-content .post-content a{
+    
+    color:  black;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 main .site-content .post-content > .post-image > div{
@@ -191,11 +219,11 @@ main .site-content .post-content > .post-image .img:hover{
 
 
 main .site-content .post-content > .post-image .post-info{
-    background: #a1c4fd;
-    padding: 1rem;
+    background: #8fc1e3;
+    padding: 5px;
     position: absolute;
     bottom: 0%;
-    left: 20vw;
+    left: 18vw;
     border-radius: 3rem;
 }
 
@@ -206,12 +234,13 @@ main .site-content .post-content > .post-image .post-info span{
 main .post-content .post-title a{
     font-family: Arial;
     font-size: 1.5rem;
+    color: ;
 }
 
 .site-content .post-content .post-title .post-btn{
-    border-radius: 0;
-    padding: .7rem 1.5rem;
-    background: a1c4fd ;
+    border-radius: 5;
+    padding: 5px/5px;
+    background: #8fc1e3 ;
 }
 
 .project-area
@@ -245,7 +274,7 @@ main .post-content .post-title a{
 
 
 .site-main  .container-fluids{
-    margin: 130px;
+    margin: 180px;
    
     /* background-color: teal; */
     padding: 20px; 
@@ -265,7 +294,7 @@ input[type=text]{
   padding: 12px 20px;
   margin: 9px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -275,20 +304,13 @@ input[type=email]{
     padding: 12px 20px;
     margin: 9px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 4px;
     box-sizing: border-box;
   }
 
-  input[type=message]{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 9px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+  
+  
 
 input[type=submit] {
     width: 100%;
@@ -300,9 +322,13 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
   }
+
+  button[type=submit] {
+    background-color: #5085a5 ;
+  }
   
-  input[type=submit]:hover {
-    background-color: #45a049;
+  button[type=submit]:hover {
+    background-color: #6fa0be;
   }
 
 
